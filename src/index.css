@@ -57,6 +57,11 @@ body {
   color: purple;
 }
 
+.cardsContainer{
+  display: flex;
+  flex-flow: row wrap;
+}
+
 ul {
   list-style-type: none;
   list-style: none;
@@ -80,15 +85,22 @@ ul {
 
 
 .pigTile {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-repeat: no-repeat;
   background-position: center 90%;
-  float: left;
+  /* float: left; */
   margin: 2%;
   padding: 1%;
   outline: #3B0B0B dotted thick;
   transition: 0.75s;
   opacity: 1;
+}
+
+.details {
+  justify-self: center;
 }
 
 .minBackgroundSneak {
@@ -97,6 +109,9 @@ ul {
   height: inherit;
   background-size: cover;
   z-index: -3;
+  align-self: center;
+  justify-self: center;
+  margin: 0px;
 }
 
 .maxBackgroundSneak {
